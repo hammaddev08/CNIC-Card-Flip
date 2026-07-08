@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>CNIC Card · Front & Back Flip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card-scene">
+    <input type="checkbox" id="card-flip-toggle" class="sr-only-checkbox">
+
+    <div class="card-wrapper">
+      <div class="card-container">
+        <!-- FRONT CARD -->
+        <div class="card front-card">
+          <div class="card-inner-content">
+            <div class="card-header">
+              <span class="emblem-text">PAKISTAN</span>
+              <span class="chip-icon"><img width="60" height="30" src="/Images/Paksitan.webp" alt="Chip"></span>
+            </div>
+            <div class="card-body">
+              <div class="photo-placeholder">
+                <span class="photo-icon"><img width="60" height="70" src="/Images/hamamd.jpeg" alt="Photo"></span>
+              </div>
+              <div class="info-lines">
+                <div class="info-row"><span class="label">Name</span> <span class="value">Syed Hammad Ali</span></div>
+                <div class="info-row"><span class="label">Father</span> <span class="value">Syed Shahid Ali</span></div>
+                <div class="info-row"><span class="label">DOB</span> <span class="value">17-01-2026</span></div>
+                <div class="info-row id-number"><span class="label">CNIC</span> <span
+                    class="value">35202-1234567-8</span></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="issue-date">Valid: 01/01/2036</span>
+            </div>
+          </div>
+          <label for="card-flip-toggle" class="flip-button back-flip-btn">Show Back Side</label>
+        </div>
+
+        <!-- BACK CARD -->
+        <div class="card back-card">
+          <div class="card-inner-content">
+            <div class="magnetic-stripe"></div>
+            <div class="back-details">
+              <div class="qr-mock">
+                <span class="qr-symbol">⬛⬜⬛<br>⬜⬛⬜<br>⬛⬜⬛</span>
+              </div>
+              <div class="back-text">
+                <p>Government of Pakistan</p>
+                <p class="small-note">Computerized National Identity Card</p>
+                <p class="address-line">House 12, Street 5, Bahawalpur</p>
+                <p class="issue-line">Issued: NADRA</p>
+              </div>
+              <div class="signature-strip">
+                <span class="sig-text">Syed Hammad</span>
+              </div>
+            </div>
+            <div class="card-footer back-footer">
+              <span class="authority">Director General NADRA</span>
+            </div>
+          </div>
+          <label for="card-flip-toggle" class="flip-button front-flip-btn">Show Front Side</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
